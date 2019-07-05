@@ -933,14 +933,60 @@
 </svg></span>行是这<em>N</em>个学生获得的奖学金的总数。</p>
 <h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2>
 <p><strong>输入样例#1：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">YaoLin 87 82 Y N 0</span><br><span class="line">ChenRuiyi 88 78 N Y 1</span><br><span class="line">LiXin 92 88 N N 0</span><br><span class="line">ZhangQin 83 87 Y N 1</span><br></pre></td></tr></table></figure>
+<pre><code>4
+YaoLin 87 82 Y N 0
+ChenRuiyi 88 78 N Y 1
+LiXin 92 88 N N 0
+ZhangQin 83 87 Y N 1
+</code></pre>
 <p><strong>输出样例#1：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ChenRuiyi</span><br><span class="line">9000</span><br><span class="line">28700</span><br></pre></td></tr></table></figure>
+<pre><code>ChenRuiyi
+9000
+28700
+</code></pre>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2>
 <p>2005提高组第一题</p>
 <hr>
 <p>这道题目直接模拟就可以通过，注释也比较多，就不详细讲解了。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> cadre[<span class="number">101</span>], western[<span class="number">101</span>]; <span class="comment">//存储姓名，是否是学生干部，是否是西部省份学生</span></span><br><span class="line"><span class="built_in">string</span> name[<span class="number">101</span>];</span><br><span class="line"><span class="keyword">int</span> fa[<span class="number">101</span>], ca[<span class="number">101</span>], thesis[<span class="number">101</span>], num[<span class="number">101</span>], sum[<span class="number">101</span>], ans = <span class="number">0</span>; <span class="comment">//存储期末平均成绩，班级评议成绩，发表的论文数量，每个学生姓名的长度，每个学生的奖金总数以及这N个学生获得的奖学金的总数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">judge</span> <span class="params">(<span class="keyword">int</span> i)</span> </span>&#123; <span class="comment">//判断能得到多少奖金</span></span><br><span class="line">    <span class="keyword">if</span> ((fa[i] &gt; <span class="number">80</span>) &amp;&amp; (thesis[i] &gt;= <span class="number">1</span>))</span><br><span class="line">        sum[i] += <span class="number">8000</span>; <span class="comment">//院士奖学金，每人8000元，期末平均成绩高于80分（&gt;80），并且在本学期内发表1篇或1篇以上论文的学生均可获得</span></span><br><span class="line">    <span class="keyword">if</span> ((fa[i] &gt; <span class="number">85</span>) &amp;&amp; (ca[i] &gt;<span class="number">80</span>))</span><br><span class="line">        sum[i] += <span class="number">4000</span>; <span class="comment">//五四奖学金，每人4000元，期末平均成绩高于85分（&gt;85），并且班级评议成绩高于80分（&gt;80）的学生均可获得</span></span><br><span class="line">    <span class="keyword">if</span> (fa[i] &gt; <span class="number">90</span>)</span><br><span class="line">        sum[i] += <span class="number">2000</span>; <span class="comment">//成绩优秀奖，每人2000元，期末平均成绩高于90分（&gt;90）的学生均可获得</span></span><br><span class="line">    <span class="keyword">if</span> ((fa[i] &gt; <span class="number">85</span>) &amp;&amp; (western[i] == <span class="string">'Y'</span>))</span><br><span class="line">        sum[i] += <span class="number">1000</span>; <span class="comment">//西部奖学金，每人1000元，期末平均成绩高于85分（&gt;85）的西部省份学生均可获得</span></span><br><span class="line">    <span class="keyword">if</span> ((ca[i] &gt; <span class="number">80</span>) &amp;&amp; (cadre[i] == <span class="string">'Y'</span>))</span><br><span class="line">        sum[i] += <span class="number">850</span>; <span class="comment">//班级贡献奖，每人850元，班级评议成绩高于80分（&gt;80）的学生干部均可获得</span></span><br><span class="line">    ans += sum[i];</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n; <span class="comment">//表示学生的总数</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">int</span> maxx = <span class="number">0</span>, identifier = <span class="number">0</span>; <span class="comment">//存储获得最多奖金的学生的钱数以及编号</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; name[i] &gt;&gt; fa[i] &gt;&gt; ca[i] &gt;&gt; cadre[i] &gt;&gt; western[i] &gt;&gt; thesis[i];<span class="comment">//学生姓名，期末平均成绩，班级评议成绩，是否是学生干部，是否是西部省份学生，以及发表的论文数</span></span><br><span class="line">        judge(i);</span><br><span class="line">        <span class="keyword">if</span> (sum[i] &gt; maxx)&#123;</span><br><span class="line">            maxx = sum[i];</span><br><span class="line">            identifier = i; <span class="comment">//更新信息</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; name[identifier] &lt;&lt; <span class="built_in">endl</span>; <span class="comment">//获得最多奖金的学生的姓名</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; maxx &lt;&lt;  <span class="built_in">endl</span>; <span class="comment">//输出这名学生获得的奖金总数</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans; <span class="comment">//输出这N个学生获得的奖学金的总数</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;iostream&gt;
+using namespace std;
+char cadre[101], western[101]; //存储姓名，是否是学生干部，是否是西部省份学生
+string name[101];
+int fa[101], ca[101], thesis[101], num[101], sum[101], ans = 0; //存储期末平均成绩，班级评议成绩，发表的论文数量，每个学生姓名的长度，每个学生的奖金总数以及这N个学生获得的奖学金的总数
+void judge (int i) { //判断能得到多少奖金
+    if ((fa[i] &gt; 80) &amp;&amp; (thesis[i] &gt;= 1))
+        sum[i] += 8000; //院士奖学金，每人8000元，期末平均成绩高于80分（&gt;80），并且在本学期内发表1篇或1篇以上论文的学生均可获得
+    if ((fa[i] &gt; 85) &amp;&amp; (ca[i] &gt;80))
+        sum[i] += 4000; //五四奖学金，每人4000元，期末平均成绩高于85分（&gt;85），并且班级评议成绩高于80分（&gt;80）的学生均可获得
+    if (fa[i] &gt; 90)
+        sum[i] += 2000; //成绩优秀奖，每人2000元，期末平均成绩高于90分（&gt;90）的学生均可获得
+    if ((fa[i] &gt; 85) &amp;&amp; (western[i] == 'Y'))
+        sum[i] += 1000; //西部奖学金，每人1000元，期末平均成绩高于85分（&gt;85）的西部省份学生均可获得
+    if ((ca[i] &gt; 80) &amp;&amp; (cadre[i] == 'Y'))
+        sum[i] += 850; //班级贡献奖，每人850元，班级评议成绩高于80分（&gt;80）的学生干部均可获得
+    ans += sum[i];
+    return;
+}
+int main(){
+    int n; //表示学生的总数
+    cin &gt;&gt; n;
+    int maxx = 0, identifier = 0; //存储获得最多奖金的学生的钱数以及编号
+    for (int i = 1; i &lt;= n; i++) {
+        cin &gt;&gt; name[i] &gt;&gt; fa[i] &gt;&gt; ca[i] &gt;&gt; cadre[i] &gt;&gt; western[i] &gt;&gt; thesis[i];//学生姓名，期末平均成绩，班级评议成绩，是否是学生干部，是否是西部省份学生，以及发表的论文数
+        judge(i);
+        if (sum[i] &gt; maxx){
+            maxx = sum[i];
+            identifier = i; //更新信息
+        }
+    }
+    cout &lt;&lt; name[identifier] &lt;&lt; endl; //获得最多奖金的学生的姓名
+    cout &lt;&lt; maxx &lt;&lt;  endl; //输出这名学生获得的奖金总数
+    cout &lt;&lt; ans; //输出这N个学生获得的奖学金的总数
+    return 0;
+}
+</code></pre>
 
         
     

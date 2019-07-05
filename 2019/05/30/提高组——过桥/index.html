@@ -943,7 +943,40 @@
 </g>
 </svg></span> 值，找出最小值，这便是我们的答案辣!</p>
 <p>最后附上代码:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> stone[<span class="number">101</span>], sum[<span class="number">10001</span>];</span><br><span class="line"><span class="keyword">bool</span> bridge[<span class="number">100001</span>]; <span class="comment">//存储离散化之后桥上石子的分布情况</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> l, s, t, m; <span class="comment">//桥长，青蛙一次跳跃的最小距离，最大距离及桥上石子的个数</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; l &gt;&gt; s &gt;&gt; t &gt;&gt; m;</span><br><span class="line">    <span class="built_in">memset</span>(sum, <span class="number">0x3f</span>, <span class="keyword">sizeof</span>(sum)); <span class="comment">//初始化sum数组</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; stone[i];</span><br><span class="line">    sort(stone, stone + m + <span class="number">2</span>);</span><br><span class="line">    <span class="keyword">int</span> identifier = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m + <span class="number">1</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (stone[i] - stone[i - <span class="number">1</span>] &lt;= t * s)</span><br><span class="line">            identifier += stone[i] - stone[i - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            identifier += (stone[i] - stone[i - <span class="number">1</span>]) % t + t;</span><br><span class="line">        bridge[identifier] = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    sum[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= identifier + t; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = s; j &lt;= t; j++)</span><br><span class="line">            <span class="keyword">if</span> ((i - j) &gt;= <span class="number">0</span>)</span><br><span class="line">                sum[i] = min(sum[i], sum[i - j] + bridge[i]);</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0x3f</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = identifier; i &lt;= identifier + t; i++)</span><br><span class="line">        ans = min(ans, sum[i]);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>#include &lt;cstring&gt;
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+int stone[101], sum[10001];
+bool bridge[100001]; //存储离散化之后桥上石子的分布情况
+int main() {
+    int l, s, t, m; //桥长，青蛙一次跳跃的最小距离，最大距离及桥上石子的个数
+    cin &gt;&gt; l &gt;&gt; s &gt;&gt; t &gt;&gt; m;
+    memset(sum, 0x3f, sizeof(sum)); //初始化sum数组
+    for(int i = 1; i &lt;= m; i++)
+        cin &gt;&gt; stone[i];
+    sort(stone, stone + m + 2);
+    int identifier = 0;
+    for (int i = 1; i &lt;= m + 1; i++) {
+        if (stone[i] - stone[i - 1] &lt;= t * s)
+            identifier += stone[i] - stone[i - 1];
+        else
+            identifier += (stone[i] - stone[i - 1]) % t + t;
+        bridge[identifier] = true;
+    }
+    sum[0] = 0;
+    for (int i = 1; i &lt;= identifier + t; i++)
+        for (int j = s; j &lt;= t; j++)
+            if ((i - j) &gt;= 0)
+                sum[i] = min(sum[i], sum[i - j] + bridge[i]);
+    int ans = 0x3f;
+    for (int i = identifier; i &lt;= identifier + t; i++)
+        ans = min(ans, sum[i]);
+    cout &lt;&lt; ans;
+    return 0;
+}
+
+</code></pre>
 
         
     
