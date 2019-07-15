@@ -231,7 +231,7 @@
 
     
         <meta property="article:published_time" content="Tue Jul 02 2019 21:31:57 GMT+0800">
-        <meta property="article:modified_time" content="Sun Jul 14 2019 21:36:33 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jul 15 2019 21:18:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
     "mainEntityOfPage": "http://Actinoi.com/2019/07/02/NOIP2005 普及组/index.html",
     "headline": "NOIP2005 普及组",
     "datePublished": "Tue Jul 02 2019 21:31:57 GMT+0800",
-    "dateModified": "Sun Jul 14 2019 21:36:33 GMT+0800",
+    "dateModified": "Mon Jul 15 2019 21:18:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Actinoi",
@@ -649,17 +649,18 @@
 using namespace std;
 int apple[11];
 int main() {
-int ans = 0, tall = 0; //存储陶陶能够摘到的苹果的数目以及陶陶把手伸直的时候能够达到的最大高度
-for (int i = 1; i &lt;= 10; i++) //读入每个苹果的高度
-cin &gt;&gt; apple[i];
-cin &gt;&gt; tall;
-tall += 30; //陶陶能够达到的最大高度
-for (int i = 1; i &lt;= 10; i++)
-if (apple[i] &lt;= tall)
-ans++;
-cout &lt;&lt; ans &lt;&lt; endl;
-return 0;
+    int ans = 0, tall = 0; //存储陶陶能够摘到的苹果的数目以及陶陶把手伸直的时候能够达到的最大高度
+    for (int i = 1; i &lt;= 10; i++) //读入每个苹果的高度
+        cin &gt;&gt; apple[i];
+    cin &gt;&gt; tall;
+    tall += 30; //陶陶能够达到的最大高度
+    for (int i = 1; i &lt;= 10; i++)
+        if (apple[i] &lt;= tall)
+            ans++;
+    cout &lt;&lt; ans &lt;&lt; endl;
+    return 0;
 }
+
 </code></pre>
 <hr>
 <h1><strong>T2:校门外的树</strong></h1>
@@ -983,21 +984,22 @@ return 0;
 using namespace std;
 bool railway[10001]; //有地铁标记为true，无地铁标记为false
 int main() {
-int l, m; //l代表马路的长度，m代表区域的数目
-cin &gt;&gt; l &gt;&gt; m;
-for (int i = 1; i &lt;= m; i++) {
-int start, end; //存储一个区域的起始点和终止点的坐标
-cin &gt;&gt; start &gt;&gt; end;
-for (int j = start; j &lt;= end; j++)
-railway[j] = true;
+    int l, m; //l代表马路的长度，m代表区域的数目
+    cin &gt;&gt; l &gt;&gt; m;
+    for (int i = 1; i &lt;= m; i++) {
+        int start, end; //存储一个区域的起始点和终止点的坐标
+        cin &gt;&gt; start &gt;&gt; end;
+        for (int j = start; j &lt;= end; j++)
+            railway[j] = true;
+    }
+    int ans = 0; //存储马路上标记为false的总个数
+    for (int i = 0; i &lt;= l; i++)
+        if (railway[i] == false)
+            ans++;
+    cout &lt;&lt; ans &lt;&lt; endl;
+    return 0;
 }
-int ans = 0; //存储马路上标记为false的总个数
-for (int i = 0; i &lt;= l; i++)
-if (railway[i] == false)
-ans++;
-cout &lt;&lt; ans &lt;&lt; endl;
-return 0;
-}
+
 </code></pre>
 <hr>
 <h1><strong>T3:采药</strong></h1>
@@ -1447,16 +1449,16 @@ using namespace std;
 int herb[101][3]; //存储采摘某株草药的时间和这株草药的价值
 int DP[1001];
 int main() {
-int T, M; //T代表总共能够用来采药的时间，M代表山洞里的草药的数目
-cin &gt;&gt; T &gt;&gt; M;
-for (int i = 1; i &lt;= M; i++)
-cin &gt;&gt; herb[i][1] &gt;&gt; herb[i][2];
-for (int i = 1; i &lt;= M; i++)
-for (int j = T; j &gt;= 1; j--)
-if ((j - herb[i][1]) &gt;= 0)
-DP[j] = max(DP[j], (DP[j - herb[i][1]] + herb[i][2]));
-cout &lt;&lt; DP[T] &lt;&lt; endl;
-return 0;
+    int T, M; //T代表总共能够用来采药的时间，M代表山洞里的草药的数目
+    cin &gt;&gt; T &gt;&gt; M;
+    for (int i = 1; i &lt;= M; i++)
+        cin &gt;&gt; herb[i][1] &gt;&gt; herb[i][2];
+    for (int i = 1; i &lt;= M; i++)
+        for (int j = T; j &gt;= 1; j--)
+            if ((j - herb[i][1]) &gt;= 0)
+                DP[j] = max(DP[j], (DP[j - herb[i][1]] + herb[i][2]));
+    cout &lt;&lt; DP[T] &lt;&lt; endl;
+    return 0;
 }
 </code></pre>
 <h1><strong>T4:循环</strong></h1>
