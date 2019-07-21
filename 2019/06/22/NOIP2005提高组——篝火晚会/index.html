@@ -231,7 +231,7 @@
 
     
         <meta property="article:published_time" content="Sat Jun 22 2019 13:14:23 GMT+0800">
-        <meta property="article:modified_time" content="Sat Jul 06 2019 12:44:49 GMT+0800">
+        <meta property="article:modified_time" content="Sun Jul 21 2019 14:15:26 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
     "mainEntityOfPage": "http://Actinoi.com/2019/06/22/NOIP2005提高组——篝火晚会/index.html",
     "headline": "NOIP2005提高组——篝火晚会",
     "datePublished": "Sat Jun 22 2019 13:14:23 GMT+0800",
-    "dateModified": "Sat Jul 06 2019 12:44:49 GMT+0800",
+    "dateModified": "Sun Jul 21 2019 14:15:26 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Actinoi",
@@ -901,7 +901,7 @@
 <p>2005提高组第三题</p>
 <hr>
 <h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1>
-<p>本题有一个坑，那就是移动的人不需要连续。然后。。。知道这个坑点之后，我们很容易想到最优解，那就是化环为链，构建目标链与初始链，然后找到目标链与初始链中不一样的人的总数，用总人数 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.808ex" height="2.176ex" style="vertical-align: -0.505ex;" viewbox="0 -719.6 778.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-30-Title">
+<p>​ 本题有一个坑，那就是移动的人不需要连续。然后。。。知道这个坑点之后，我们很容易想到最优解，那就是化环为链，构建目标链与初始链，然后找到目标链与初始链中不一样的人的总数，用总人数 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.808ex" height="2.176ex" style="vertical-align: -0.505ex;" viewbox="0 -719.6 778.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-30-Title">
 <title id="MathJax-SVG-30-Title">-</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E30-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
@@ -961,7 +961,7 @@
 </g>
 </svg></span> 完成变换。</p>
 </blockquote>
-<p>​	但是，环是可以旋转的，因此我们并不知道怎样转动是最优的。我们便可以考虑以每个点为起点进行搜索，因此，一个<s>绝佳的</s> <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.76ex" height="3.009ex" style="vertical-align: -0.838ex;" viewbox="0 -934.9 2910.5 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-34-Title">
+<p>​​ 但是，环是可以旋转的，因此我们并不知道怎样转动是最优的。我们便可以考虑以每个点为起点进行搜索，因此，一个<s>绝佳的</s> <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.76ex" height="3.009ex" style="vertical-align: -0.838ex;" viewbox="0 -934.9 2910.5 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-34-Title">
 <title id="MathJax-SVG-34-Title">O(N^2)</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E34-MJMATHI-4F" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"/>
@@ -980,7 +980,7 @@
  <use xlink:href="#E34-MJMAIN-29" x="2520" y="0"/>
 </g>
 </svg></span> 的算法便出炉啦！</p>
-<p>​	无疑，这个算法会让我们看到一片 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.995ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2150.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-35-Title">
+<p>​​ 无疑，这个算法会让我们看到一片 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.995ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2150.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-35-Title">
 <title id="MathJax-SVG-35-Title">TLE</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E35-MJMATHI-54" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"/>
@@ -1075,7 +1075,7 @@
  <use xlink:href="#E39-MJMAIN-31" x="4728" y="0"/>
 </g>
 </svg></span></h4>
-<p>​	在这条差值中， <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-40-Title">
+<p>​​ 在这条差值中， <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-40-Title">
 <title id="MathJax-SVG-40-Title">0</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E40-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
@@ -1141,7 +1141,7 @@
 </g>
 </svg></span> 啦！</p>
 <h3 id="等等！"><a href="#等等！" class="headerlink" title="等等！"></a>等等！</h3>
-<p>​	这既然是一个环，那么，会不会构建目标链得到的结果不一样呢？的确是这样滴。还是以上图为例，从 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-48-Title">
+<p>​​ 这既然是一个环，那么，会不会构建目标链得到的结果不一样呢？的确是这样滴。还是以上图为例，从 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-48-Title">
 <title id="MathJax-SVG-48-Title">1</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E48-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
@@ -1361,7 +1361,7 @@
  <use xlink:href="#E56-MJMAIN-31" x="1533" y="0"/>
 </g>
 </svg></span> 跑一遍差值，然后找出最大的差值。</p>
-<p>​	那么，什么时候不能符合每个同学的愿望呢？其实，只要构出目标环，便一定可以<s>用玄学的方法</s>使每个同学满意。那么，只有在构不成目标环的时候才输出 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.971ex" height="2.343ex" style="vertical-align: -0.505ex;" viewbox="0 -791.3 1279 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-57-Title">
+<p>​​ 那么，什么时候不能符合每个同学的愿望呢？其实，只要构出目标环，便一定可以<s>用玄学的方法</s>使每个同学满意。那么，只有在构不成目标环的时候才输出 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.971ex" height="2.343ex" style="vertical-align: -0.505ex;" viewbox="0 -791.3 1279 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-57-Title">
 <title id="MathJax-SVG-57-Title">-1</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E57-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
