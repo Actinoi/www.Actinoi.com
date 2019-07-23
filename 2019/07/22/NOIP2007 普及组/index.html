@@ -231,7 +231,7 @@
 
     
         <meta property="article:published_time" content="Mon Jul 22 2019 23:08:45 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jul 22 2019 23:10:05 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jul 23 2019 12:22:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
     "mainEntityOfPage": "http://Actinoi.com/2019/07/22/NOIP2007 普及组/index.html",
     "headline": "NOIP2007 普及组",
     "datePublished": "Mon Jul 22 2019 23:08:45 GMT+0800",
-    "dateModified": "Mon Jul 22 2019 23:10:05 GMT+0800",
+    "dateModified": "Tue Jul 23 2019 12:22:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Actinoi",
@@ -358,17 +358,8 @@
                 
     <!-- Paradox Post Header -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://actinoi.oss-cn-hongkong.aliyuncs.com/%E9%A2%98%E8%A7%A3/%E6%99%AE%E5%8F%8A%E7%BB%84/NOIP%202007%E6%99%AE%E5%8F%8A%E7%BB%84/NOIP2007%20%E6%99%AE%E5%8F%8A%E7%BB%84%E8%83%8C%E6%99%AF.jpg)">
     
             <p class="article-headline-p">
                 NOIP2007 普及组
@@ -819,7 +810,7 @@
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2>
 <p>NOIP2007普及组第一题</p>
 <h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1>
-<p>一道模拟题。首先，用 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="27.79ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 11965.1 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-29-Title">
+<p>​ ​一道模拟题。首先，用 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="27.79ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 11965.1 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-29-Title">
 <title id="MathJax-SVG-29-Title">student[i][1] \sim student[i][3]</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E29-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"/>
@@ -1172,8 +1163,8 @@ int main() {
 </svg></span></p>
 <p>NOIP2007普及组第二题</p>
 <h1 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h1>
-<p>本题是一道典型的贪心问题。我们在读入物品的价格之后，对物品的价格进行排序。然后从价格最小的物品开始枚举，从价值最大的物品反向查看能否与这个物品分为一组。为什么要从价格最大的物品开始进行查看，而不是从价格最小的物品开始呢？我们可以举一个🌰。如：</p>
-<p><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.76ex" height="2.509ex" style="vertical-align: -0.671ex;" viewbox="0 -791.3 6785.7 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-45-Title">
+<p>​ ​本题是一道典型的贪心问题。我们在读入物品的价格之后，对物品的价格进行排序。然后从价格最小的物品开始枚举，从价值最大的物品反向查看能否与这个物品分为一组。为什么要从价格最大的物品开始进行查看，而不是从价格最小的物品开始呢？我们可以举一个🌰。如：</p>
+<p>​ ​<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.76ex" height="2.509ex" style="vertical-align: -0.671ex;" viewbox="0 -791.3 6785.7 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-45-Title">
 <title id="MathJax-SVG-45-Title">10,20,30,40,50</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E45-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
@@ -1209,7 +1200,7 @@ int main() {
 </g>
 </g>
 </svg></span></p>
-<p>我们看这个数组，当 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.088ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 3051.6 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-46-Title">
+<p>​ ​我们看这个数组，当 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.088ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 3051.6 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-46-Title">
 <title id="MathJax-SVG-46-Title">w=60</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E46-MJMATHI-77" d="M580 385Q580 406 599 424T641 443Q659 443 674 425T690 368Q690 339 671 253Q656 197 644 161T609 80T554 12T482 -11Q438 -11 404 5T355 48Q354 47 352 44Q311 -11 252 -11Q226 -11 202 -5T155 14T118 53T104 116Q104 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 293 29 315T52 366T96 418T161 441Q204 441 227 416T250 358Q250 340 217 250T184 111Q184 65 205 46T258 26Q301 26 334 87L339 96V119Q339 122 339 128T340 136T341 143T342 152T345 165T348 182T354 206T362 238T373 281Q402 395 406 404Q419 431 449 431Q468 431 475 421T483 402Q483 389 454 274T422 142Q420 131 420 107V100Q420 85 423 71T442 42T487 26Q558 26 600 148Q609 171 620 213T632 273Q632 306 619 325T593 357T580 385Z"/>
@@ -1242,7 +1233,7 @@ int main() {
  <use xlink:href="#E48-MJMAIN-33" x="0" y="0"/>
 </g>
 </svg></span> 组就能满足要求。这便是最优的方案。</p>
-<p>最后，我们再扫一遍这个数组，如果有物品没有被分组，那么就只能让这个物品单独一组了。所以说答案 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.715ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 1599.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-49-Title">
+<p>​ ​最后，我们再扫一遍这个数组，如果有物品没有被分组，那么就只能让这个物品单独一组了。所以说答案 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.715ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 1599.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-49-Title">
 <title id="MathJax-SVG-49-Title">ans</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E49-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"/>
@@ -1667,7 +1658,7 @@ int main() {
 </svg></span></p>
 <p>NOIP2007普及组第三题</p>
 <h1 id="题解：-2"><a href="#题解：-2" class="headerlink" title="题解："></a>题解：</h1>
-<p>对于本题，我们读过题目之后可以想到，这是一个动态规划问题。守望者在逃离海岛时，要么使用闪烁法术，要么跑步。因此，我们便可以考虑分别 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-75-Title">
+<p>​ ​对于本题，我们读过题目之后可以想到，这是一个动态规划问题。守望者在逃离海岛时，要么使用闪烁法术，要么跑步。因此，我们便可以考虑分别 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-75-Title">
 <title id="MathJax-SVG-75-Title">DP</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E75-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"/>
@@ -1678,7 +1669,7 @@ int main() {
  <use xlink:href="#E75-MJMATHI-50" x="828" y="0"/>
 </g>
 </svg></span> 这两种情况。</p>
-<p>单独考虑第一种情况，我们可以想到，如果守望者的魔法值 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.778ex" height="2.343ex" style="vertical-align: -0.505ex;" viewbox="0 -791.3 2057.3 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-76-Title">
+<p>​ ​单独考虑第一种情况，我们可以想到，如果守望者的魔法值 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.778ex" height="2.343ex" style="vertical-align: -0.505ex;" viewbox="0 -791.3 2057.3 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-76-Title">
 <title id="MathJax-SVG-76-Title">\geq 10</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E76-MJMAIN-2265" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"/>
@@ -1780,7 +1771,7 @@ int main() {
  <use xlink:href="#E79-MJMAIN-5D" x="7744" y="0"/>
 </g>
 </svg></span>。</p>
-<p>然后我们再考虑第二种情况。由于 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-80-Title">
+<p>​ ​然后我们再考虑第二种情况。由于 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-80-Title">
 <title id="MathJax-SVG-80-Title">DP</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E80-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"/>
