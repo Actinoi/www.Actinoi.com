@@ -231,7 +231,7 @@
 
     
         <meta property="article:published_time" content="Wed Jul 24 2019 16:37:48 GMT+0800">
-        <meta property="article:modified_time" content="Wed Jul 24 2019 16:51:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Jul 24 2019 16:52:55 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
     "mainEntityOfPage": "http://Actinoi.com/2019/07/24/NOIP2008 普及组/index.html",
     "headline": "NOIP2008 普及组",
     "datePublished": "Wed Jul 24 2019 16:37:48 GMT+0800",
-    "dateModified": "Wed Jul 24 2019 16:51:00 GMT+0800",
+    "dateModified": "Wed Jul 24 2019 16:52:55 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Actinoi",
@@ -2097,12 +2097,13 @@ int main() {
  <use xlink:href="#E113-MJMAIN-31" x="0" y="0"/>
 </g>
 </svg></span>），小渊想请你打印出这些格子的立体图。我们定义每个积木为如下格式，并且不会做任何翻转旋转，只会严格以这一种形式摆放：</p>
-<p>+---+
-/   /|
-+---+ |
-|   | +
-|   |/
-+---+</p>
+<pre><code>  +---+ 
+ /   /| 
++---+ | 
+|   | + 
+|   |/ 
++---+ 
+</code></pre>
 <p>每个顶点用<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-114-Title">
 <title id="MathJax-SVG-114-Title">1</title>
 <defs aria-hidden="true">
@@ -2181,31 +2182,34 @@ int main() {
 </g>
 </svg></span>）需要作为背景输出，即立体图里的空白部分需要用’.’代替。立体图的画法如下面的规则：</p>
 <p>若两块积木左右相邻，图示为：</p>
-<p>..+---+---+
-./   /   /|
-+---+---+ |
-|   |   | +
-|   |   |/.
-+---+---+..</p>
+<pre><code>..+---+---+ 
+./   /   /| 
++---+---+ | 
+|   |   | + 
+|   |   |/. 
++---+---+.. 
+</code></pre>
 <p>若两块积木上下相邻，图示为：</p>
-<p>..+---+
-./   /|
-+---+ |
-|   | +
-|   |/|
-+---+ |
-|   | +
-|   |/.
-+---+..</p>
+<pre><code>..+---+ 
+./   /| 
++---+ | 
+|   | + 
+|   |/| 
++---+ | 
+|   | + 
+|   |/. 
++---+.. 
+</code></pre>
 <p>若两块积木前后相邻，图示为：</p>
-<p>....+---+
-.../   /|
-..+---+ |
-./   /| +
-+---+ |/.
-|   | +..
-|   |/...
-+---+....</p>
+<pre><code>....+---+ 
+.../   /| 
+..+---+ | 
+./   /| + 
++---+ |/. 
+|   | +.. 
+|   |/... 
++---+.... 
+</code></pre>
 <p>立体图中，定义位于第<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.046ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 2603.2 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-122-Title">
 <title id="MathJax-SVG-122-Title">(m,1)</title>
 <defs aria-hidden="true">
