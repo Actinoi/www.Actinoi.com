@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            普及组 | 
+        
+        Actinoi&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png">
+    <link rel="icon" href="//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content>
+    <meta name="keywords" content=",题解">
+    <meta name="theme-color" content="#0097A7">
+
+    <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Actinoi&#39;s Blog">
+    <meta name="msapplication-starturl" content="http://Actinoi.com/2019/07/28/NOIP2009 普及组/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Actinoi&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="//actinoi.oss-cn-hongkong.aliyuncs.com/favicon.jpeg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://Actinoi.com/2019/07/28/NOIP2009 普及组/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="普及组 | Actinoi&#39;s Blog">
+    <meta property="og:image" content="//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png">
+    <meta property="og:description" content>
+    <meta property="og:article:tag" content="题解"> 
+
+    
+        <meta property="article:published_time" content="Sun Jul 28 2019 15:16:30 GMT+0800">
+        <meta property="article:modified_time" content="Sun Jul 28 2019 15:17:21 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html">
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html",
+    "headline": "普及组",
+    "datePublished": "Sun Jul 28 2019 15:16:30 GMT+0800",
+    "dateModified": "Sun Jul 28 2019 15:17:21 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Actinoi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png"
+        },
+        "description": "Actinoi的blog"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Actinoi&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png"
+        }
+    },
+    "keywords": ",题解",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+    <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://actinoi.oss-cn-hongkong.aliyuncs.com/%E9%A2%98%E8%A7%A3/%E6%99%AE%E5%8F%8A%E7%BB%84/NOIP%202009%E6%99%AE%E5%8F%8A%E7%BB%84/NOIP2009%20%E6%99%AE%E5%8F%8A%E7%BB%84%E8%83%8C%E6%99%AF.jpg)">
+    
+            <p class="article-headline-p">
+                普及组
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Actinoi</strong>
+        <span>7月 28, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/题解/">题解</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=普及组&url=http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html&pic=http://Actinoi.com//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=普及组&url=http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html&via=Actinoi" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://Actinoi.com/2019/07/28/NOIP2009 普及组/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><strong>T1:多项式输出</strong></p>
+<p>题目描述</p>
+<p>一元​次多项式可用如下的表达式表示：</p>
+<p>f(x)=anxn + an−1xn−1 +⋯+a1x + a0, an≠0</p>
+<p>其中，aixi称为​次项，ai 称为​次项的系数。给出一个一元多项式各项的次数和系数，请按照如下规定的格式要求输出该多项式：</p>
+<p>多项式中自变量为​，从左到右按照次数递减顺序给出多项式。</p>
+<p>多项式中只包含系数不为​的项。</p>
+<p>如果多项式​次项系数为正，则多项式开头不出现“+”号，如果多项式​次项系数为负，则多项式以“-”号开头。</p>
+<p>对于不是最高次的项，以“+”号或者“-”号连接此项与前一项，分别表示此项系数为正或者系数为负。紧跟一个正整数，表示此项系数的绝对值（如果一个高于​次的项，其系数的绝对值为​，则无需输出 ​）。如果​的指数大于​，则接下来紧跟的指数部分的形式为“xb”，其中 ​为​的指数；如果 ​的指数为​，则接下来紧跟的指数部分形式为“​”；如果 ​ 的指数为​，则仅需输出系数即可。</p>
+<p>多项式中，多项式的开头、结尾不含多余的空格。</p>
+<p>输入格式</p>
+<p>输入共有 ​ 行</p>
+<p>第一行 ​ 个整数，​，表示一元多项式的次数。</p>
+<p>第二行有 ​个整数，其中第​个整数表示第​ 次项的系数，每两个整数之间用空格隔开。</p>
+<p>输出格式</p>
+<p>输出共 ​ 行，按题目所述格式输出多项式。</p>
+<p>输入输出样例</p>
+<p>输入 #1</p>
+<p>5
+100 -1 1 -3 0 10
+输出 #1</p>
+<p>100x^5-x^4+x^3-3x^2+10
+输入 #2</p>
+<p>3
+-50 0 0 1
+输出 #2</p>
+<p>-50x^3+1
+说明</p>
+<p>NOIP 2009 普及组 第一题</p>
+<p>对于​数据，​, ​系数​</p>
+<p>题解：</p>
+<p>本题是一道模拟题。我们在读入第一项的系数之后，判断是否为负数，是负数的话那么先输出一个 "-" 号， 然后判断是否为 ​，是的话就不输出了，不是的话再判断是否为 ​ ，是 ​ 的话就不输出系数了，不是的话输出其绝对值。</p>
+<p>接着读入第 ​ 项，如果等于 ​ 就啥都不输。不等于 ​ 的话，如果大于 ​ 输出 "+"，然后如果其绝对值为 ​ 的话则不输出系数了，否则输出系数与 xn - i + 1就好辣～</p>
+<p>#include <cmath>
+#include <iostream>
+using namespace std;
+int coefficient[101];
+int main() {
+int n;
+cin &gt;&gt; n;
+cin &gt;&gt; coefficient[1]; //读入第一项的系数
+if (coefficient[1] &lt;= 0)
+cout &lt;&lt; "-";
+if (coefficient[1] != 0) {
+if (abs(coefficient[1]) != 1)
+cout &lt;&lt; abs(coefficient[1]);
+cout &lt;&lt; "x^" &lt;&lt; n;
+}
+for (int i = 2; i &lt;= n; i++) {
+cin &gt;&gt; coefficient[i]; //读入每项的系数
+if (coefficient[i] != 0) {
+if (coefficient[i] &gt; 0)
+cout &lt;&lt; "+";
+if (abs(coefficient[i]) != 1)
+cout &lt;&lt; coefficient[i];
+if (coefficient[i] == -1)
+cout &lt;&lt; "-";
+cout &lt;&lt; "x";
+if (n - i + 1 != 1)
+cout &lt;&lt; "^" &lt;&lt; n - i + 1;
+}
+}
+cin &gt;&gt; coefficient[n + 1];
+if (coefficient[n + 1] != 0) {
+if (coefficient[n + 1] &gt; 0)
+cout &lt;&lt; "+";
+cout &lt;&lt; coefficient[n + 1] &lt;&lt; endl;
+}
+return 0;
+}
+T2:分数线划定</iostream></cmath></p>
+<p>题目描述</p>
+<p>世博会志愿者的选拔工作正在 A 市如火如荼的进行。为了选拔最合适的人才，A市对所有报名的选手进行了笔试，笔试分数达到面试分数线的选手方可进入面试。面试分数线根据计划录取人数的​划定，即如果计划录取​名志愿者，则面试分数线为排名第​（向下取整）名的选手的分数，而最终进入面试的选手为笔试成绩不低于面试分数线的所有选手。</p>
+<p>现在就请你编写程序划定面试分数线，并输出所有进入面试的选手的报名号和笔试成绩。</p>
+<p>输入格式</p>
+<p>第一行，两个整数 ​，中间用一个空格隔开，其中​表示报名参加笔试的选手总数，​表示计划录取的志愿者人数。输入数据保证 ​向下取整后小于等于​。</p>
+<p>第二行到第 ​ 行，每行包括两个整数，中间用一个空格隔开，分别是选手的报名号​和该选手的笔试成绩​。数据保证选手的报名号各不相同。</p>
+<p>输出格式</p>
+<p>第一行，有​个整数，用一个空格隔开，第一个整数表示面试分数线；第二个整数为进入面试的选手的实际人数。</p>
+<p>从第二行开始，每行包含​个整数，中间用一个空格隔开，分别表示进入面试的选手的报名号和笔试成绩，按照笔试成绩从高到低输出，如果成绩相同，则按报名号由小到大的顺序输出。</p>
+<p>输入输出样例</p>
+<p>输入 #1</p>
+<p>6 3
+1000 90
+3239 88
+2390 95
+7231 84
+1005 95
+1001 88
+输出 #1</p>
+<p>88 5
+1005 95
+2390 95
+1000 90
+1001 88
+3239 88
+说明</p>
+<p>【样例说明】</p>
+<p>​，向下取整后为​。保证​个人进入面试的分数线为​，但因为​有重分，所以所有成绩大于等于​ 的选手都可以进入面试，故最终有​个人进入面试。</p>
+<p>NOIP 2009 普及组 第二题</p>
+<p>题解：</p>
+<p>首先，我们先用 ​ 计算出计划几个人能够进入面试。然后对选手的编号与成绩进行排序，排完序之后，我们找到面试分数线 ​ ，然后统计有多少人能够进入面试，统计完之后输出面试分数线与进面试的总人数，然后再找一遍，如果当前这个人的分数大于面试分数线，则输出这个人的编号与成绩。</p>
+<p>最后附上代码：</p>
+<p>#include <iostream>
+using namespace std;
+int a[5001][3]; //存储选手的报名号和选手的笔试成绩
+int main() {
+int n, m;
+cin &gt;&gt; n &gt;&gt; m; //n表示报名参加笔试的选手总数，m表示计划录取的志愿者人数
+int people = m * 1.5; //几个人进入面试
+for (int i = 1; i &lt;= n; i++)
+cin &gt;&gt; a[i][1] &gt;&gt; a[i][2];
+for (int i = 1; i &lt;= n; i++) {
+for (int j = i; j &lt;= n; j++) {
+if (a[i][1] &gt; a[j][1]) { //编号小的在前面
+swap(a[i][1], a[j][1]);
+swap(a[i][2], a[j][2]);
+}
+if (a[i][2] &lt; a[j][2]) { //按成绩进行交换
+swap(a[i][1], a[j][1]);
+swap(a[i][2], a[j][2]);
+}
+}
+}
+int score = a[people][2], sum = 0;
+for (int i = 1; i &lt;= n; i++)
+if (a[i][2] &gt;= score)
+sum++;
+cout &lt;&lt; score &lt;&lt; " " &lt;&lt; sum &lt;&lt; endl;
+for (int i = 1; i &lt;= n; i++)
+if (a[i][2] &gt;= score)
+cout &lt;&lt; a[i][1] &lt;&lt; " " &lt;&lt; a[i][2] &lt;&lt; endl;
+return 0;
+}
+T2:细胞分裂</iostream></p>
+<p>题目描述</p>
+<p>​ 博士是 ​ (​，生物技术) 领域的知名专家。现在，他正在为一个细胞实验做准备工作：培养细胞样本。
+​ 博士手里现在有 ​种细胞，编号从 ​，一个第 ​种细胞经过 ​ 秒钟可以分裂为​个同种细胞（​为正整数）。现在他需要选取某种细胞的一个放进培养皿，让其自由分裂，进行培养。一段时间以后，再把培养皿中的所有细胞平均分入​个试管，形成​份样本，用于实验。​ 博士的试管数​很大，普通的计算机的基本数据类型无法存储这样大的​值，但万幸的是，​ 总可以表示为​的​次方，即​，其中 ​均为基本数据类型可以存储的正整数。
+注意，整个实验过程中不允许分割单个细胞，比如某个时刻若培养皿中有 ​个细胞，
+​博士可以把它们分入 ​ 个试管，每试管内​ 个，然后开始实验。但如果培养皿中有​个细胞，博士就无法将它们均分入​ 个试管。此时，博士就只能等待一段时间，让细胞们继续分裂，使得其个数可以均分，或是干脆改换另一种细胞培养。
+为了能让实验尽早开始，​博士在选定一种细胞开始培养后，总是在得到的细胞“刚好可以平均分入 ​个试管”时停止细胞培养并开始实验。现在博士希望知道，选择哪种细胞培养，可以使得实验的开始时间最早。</p>
+<p>输入输出格式</p>
+<p>输入格式</p>
+<p>第一行,有一个正整数 ​，代表细胞种数。
+第二行,有两个正整数 ​，以一个空格隔开，即表示试管的总数 ​.
+第三行有 N 个正整数，第 i 个数 Si表示第 i 种细胞经过 1 秒钟可以分裂成同种细胞的个数。</p>
+<p>输出格式</p>
+<p>一个整数，表示从开始培养细胞到实验能够开始所经过的最少时间（单位为秒）。
+如果无论​博士选择哪种细胞都不能满足要求，则输出整数​。</p>
+<p>输入输出样例</p>
+<p>输入 #1</p>
+<p>1
+2 1
+3
+输出 #1</p>
+<p>-1
+输入 #2</p>
+<p>2
+24 1
+30 12
+输出 #2</p>
+<p>2
+说明</p>
+<p>【输入输出说明】
+经过 ​秒钟，细胞分裂成​ 个，经过​秒钟，细胞分裂成​个，……，可以看出无论怎么分裂，细胞的个数都是奇数，因此永远不能分入 ​个试管。
+【输入输出样例​说明】
+第 ​ 种细胞最早在​ 秒后才能均分入​ 个试管，而第​ 种最早在​ 秒后就可以均分（每试管​ 个）。故实验最早可以在​ 秒后开始。
+【数据范围】
+对于 50%的数据，有​。
+对于所有的数据，有​。
+NOIP 2009 普及组 第三题</p>
+<p>题解：</p>
+<p>本题是一道比较有意思的数论题目。因为要可以平均分入 ​ 个试管我们便可以知道，如果 Si 符合条件，那么，Si 在经过 一段时间 ​ 之后，它一定 ​ 的倍数。因为​，所以 ​ 也一定是 ​ 的倍数，进而推得 ​ 包括所有 ​ 的因子，​ 也包括 ​ 的所有因子。所以，我们便可以将 ​ 分解质因数，然后对于每一个 ​ ，都令 ​ m1 的所有因子，如果余数不为 ​ ，则这个 ​ 不满足条件。那么，我们设 ​ 中的某个因子为 ​，则 ​ 包含 ​ 个​，所以我们将每个 ​ 的因子都乘上 ​，便得到了 ​ 每个因子含有几个。</p>
+<p>那么，如果这个 ​ 满足条件应该怎么办呢？我们就来看它的时间是不是最少的。我们将 ​ 除以 ​ 的每一个因子，除到 ​ 不再包括这个因子。我们设这个因子为 ​ ，​ 中含有 ​ 个 ​，​ 中含有 ​ 个 ​，如果 ​ 的话，则可以将 ​ 表示为 ​，​ 表示为
+均
+为
+正
+整
+数
+。那么，什么时候  包含的  的个数大于  包含的  的个数呢？无疑，再过  秒，  包含的  的个数便大于  包含的  的个数了。然后，我们统计一下最大的 ，便是这个  想要分到  个试管所需要的最小时间了。</p>
+<p>最后，我们再找一下所有  想要分到  个试管所需要的时间中最小的，然后输出就可以啦，如果没有一个 Si 符合条件，那么便输出  结束程序。</p>
+<p>最后附上代码：</p>
+<p>#include <cmath>
+#include <iostream>
+using namespace std;
+int t[30001]; //存储分解M的质因数的个数
+int ym[30001]; //存储M的质因数
+int k = 0;
+void decomposition(int m) { //分解质因数
+bool r = false; //判断还有没有因数
+int n = sqrt(m) + 1;
+while (m &gt; 0) {
+r = false;
+for (int i = 2; i &lt;= n; i++) {
+if (m % i == 0) {
+if (t[i] == 0) {
+k++;
+ym[k] = i;
+}
+t[i]++;
+m /= i;
+r = true;
+break;
+}
+}
+if (r == false) {
+if (t[m] == 0 &amp;&amp; m &gt; 1) {
+k++;
+ym[k] = m;
+}
+t[m]++;
+return;
+}
+}
+}
+int maxx = 0;
+int pd(int num) {
+int l = 0;
+for (int i = 1; i &lt;= k; i++) {
+int sum = 0;
+while (!(num % ym[i])) {
+sum++;
+num /= ym[i];
+}
+if (!sum)
+return 0xfffffff;
+int w = 0;
+if (sum &lt; t[ym[i]]) {
+if (t[ym[i]] % sum == 0)
+w = t[ym[i]] / sum;
+else
+w = t[ym[i]] / sum + 1;
+} else
+w = 1;
+l = max (l, w);
+}
+return l;
+}
+int main() {
+int n, m1, m2; //细胞种数与试管的总数
+cin &gt;&gt; n &gt;&gt; m1 &gt;&gt; m2;
+decomposition(m1);
+for (int i = 1; i &lt;= k; i++)
+t[ym[i]] *= m2;
+int s;
+int ans = 0xfffffff;
+for (int i = 1; i &lt;= n; i++) {
+cin &gt;&gt; s;
+ans = min(ans, pd(s));
+}
+if (ans == 0xfffffff)
+cout &lt;&lt; -1;
+else
+cout &lt;&lt; ans &lt;&lt; endl;
+return 0;
+}
+T4:道路游戏</iostream></cmath></p>
+<p>题目描述</p>
+<p>小新正在玩一个简单的电脑游戏。
+游戏中有一条环形马路，马路上有 个机器人工厂，两个相邻机器人工厂之间由一小段马路连接。小新以某个机器人工厂为起点，按顺时针顺序依次将这 个机器人工厂编号为，因为马路是环形的，所以第 个机器人工厂和第个机器人工厂是由一段马路连接在一起的。小新将连接机器人工厂的这 n 段马路也编号为 ，并规定第段马路连接第 i 个机器人工厂和第  个机器人工厂（），第  段马路连接第  个机器人工厂和第个机器人工厂。
+游戏过程中，每个单位时间内，每段马路上都会出现一些金币，金币的数量会随着时间发生变化，即不同单位时间内同一段马路上出现的金币数量可能是不同的。小新需要机器人的帮助才能收集到马路上的金币。所需的机器人必须在机器人工厂用一些金币来购买，机器人一旦被购买，便会沿着环形马路按顺时针方向一直行走，在每个单位时间内行走一次，即从当前所在的机器人工厂到达相邻的下一个机器人工厂，并将经过的马路上的所有金币收集给小新，例如，小新在（）号机器人工厂购买了一个机器人，这个机器人会从  号机器人工厂开始，顺时针在马路上行走，第一次行走会经过号马路，到达 号机器人工厂（如果 ，机器人会到达第 个机器人工厂），并将 号马路上的所有金币收集给小新。 游戏中，环形马路上不能同时存在个或者 个以上的机器人，并且每个机器人最多能够在环形马路上行走次。小新购买机器人的同时，需要给这个机器人设定行走次数，行走次数可以为  之间的任意整数。当马路上的机器人行走完规定的次数之后会自动消失，小新必须立刻在任意一个机器人工厂中购买一个新的机器人，并给新的机器人设定新的行走次数。
+以下是游戏的一些补充说明：</p>
+<p>游戏从小新第一次购买机器人开始计时。</p>
+<p>购买机器人和设定机器人的行走次数是瞬间完成的，不需要花费时间。</p>
+<p>购买机器人和机器人行走是两个独立的过程，机器人行走时不能购买机器人，购买完机器人并且设定机器人行走次数之后机器人才能行走。</p>
+<p>在同一个机器人工厂购买机器人的花费是相同的，但是在不同机器人工厂购买机器人的花费不一定相同。</p>
+<p>购买机器人花费的金币，在游戏结束时再从小新收集的金币中扣除，所以在游戏过程中小新不用担心因金币不足，无法购买机器人而导致游戏无法进行。也因为如此，游戏结束后，收集的金币数量可能为负。
+现在已知每段马路上每个单位时间内出现的金币数量和在每个机器人工厂购买机器人需要的花费，请你告诉小新，经过  个单位时间后，扣除购买机器人的花费，小新最多能收集到多少金币。</p>
+<p>输入输出格式</p>
+<p>输入格式</p>
+<p>第一行  个正整数，意义如题目所述。
+接下来的行，每行有  个正整数，每两个整数之间用一个空格隔开，其中第 i 行描
+述了  号马路上每个单位时间内出现的金币数量（金币数量），即第 行的第 （）个数表示第  个单位时间内 i 号马路上出现的金币数量。
+最后一行，有  个整数，每两个整数之间用一个空格隔开，其中第 个数表示在号机器人工厂购买机器人需要花费的金币数量（金币数量）。</p>
+<p>输出格式</p>
+<p>共一行，包含个整数，表示在 个单位时间内，扣除购买机器人
+花费的金币之后，小新最多能收集到多少金币。</p>
+<p>输入输出样例</p>
+<p>输入 #1</p>
+<p>2 3 2
+1 2 3
+2 3 4
+1 2
+输出 #1</p>
+<p>5
+【数据范围】
+对于 40%的数据，。
+对于 90%的数据，。
+对于 100%的数据，。
+NOIP 2009 普及组 第四题</p>
+<p>题解：</p>
+<p>我们用  数组枚举每个单位时间内小新最多能收集到多少金币，用  枚举时间，用  枚举工厂，用  枚举机器人走多长时间，用  存储钱数便可以得到：。</p>
+<p>似乎这不是正解？管他呢，反正都卡过去了（逃</p>
+<p>#include <iostream>
+using namespace std;
+int money[1001][1001]; //马路上出现的金币数量
+int cost[1001]; //机器人工厂购买机器人需要花费的金币数量
+int DP[1001]; //枚举每个单位时间内小新最多能收集到多少金币
+int main() {
+int n, m, p; //n个机器人工厂，m为总时间，每个机器人最多能够在环形马路上行走p次
+int q = 0;
+cin &gt;&gt; n &gt;&gt; m &gt;&gt; p;
+for (int i = 1; i &lt;= n; i++)
+for (int j = 1; j &lt;= m; j++)
+cin &gt;&gt; money[i][j];
+for (int i = 1; i &lt;= n; i++)
+cin &gt;&gt; cost[i];
+for (int i = 1; i &lt;= m; i++)
+DP[i] = -123456;
+DP[1] = money[1][1] - cost[1];
+for (int i = 1; i &lt;= m; i++)
+for (int j = 1; j &lt;= n; j++) {
+q = DP[i - 1] - cost[j];
+for (int k = 0; k &lt; p &amp;&amp; k + i &lt;= m; k++) {
+int w = k + j &gt; n ? (k + j) % n : k + j;
+q += money[w][i + k];
+DP[k + i] = max(DP[k + i], q);
+}
+}
+cout &lt;&lt; DP[m] &lt;&lt; endl;
+return 0;
+}</iostream></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/07/24/NOIP2008 普及组/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+        <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NTE0OC8yMTY2NQ==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="//actinoi.oss-cn-hongkong.aliyuncs.com/logo.png" alt="Actinoi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        13573179819@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:13573179819@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/07/">七月 2019<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/6630916707/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/Actinoi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/zhang-xiu-han-57/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/341936397" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Actinoi's Blog
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
