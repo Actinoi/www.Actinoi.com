@@ -665,6 +665,23 @@
  <use xlink:href="#E15-MJMATHI-69" x="2323" y="0"/>
 </g>
 </svg></span> 就可以了。</p>
+
+async highlight(#include &lt;cmath&gt;
+#include &lt;cstdio&gt;
+using namespace std;
+int main() {
+    long long n;
+    scanf("%lld", &amp;n);
+    int l = sqrt(n) + 1;
+    for (long long i = 2; i &lt;= l; i++)
+        if (n % i == 0) {
+            printf("%lld\n", n / i);
+            return 0;
+        }
+    return 0;
+}, c++, cache, options])
+
+
 <pre><code>#include &lt;cmath&gt;
 #include &lt;cstdio&gt;
 using namespace std;
