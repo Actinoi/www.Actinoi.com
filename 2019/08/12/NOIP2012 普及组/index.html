@@ -231,7 +231,7 @@
 
     
         <meta property="article:published_time" content="Mon Aug 12 2019 17:42:15 GMT+0800">
-        <meta property="article:modified_time" content="Mon Aug 12 2019 17:46:58 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 12 2019 17:49:13 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
     "mainEntityOfPage": "http://Actinoi.com/2019/08/12/NOIP2012 普及组/index.html",
     "headline": "NOIP2012 普及组",
     "datePublished": "Mon Aug 12 2019 17:42:15 GMT+0800",
-    "dateModified": "Mon Aug 12 2019 17:46:58 GMT+0800",
+    "dateModified": "Mon Aug 12 2019 17:49:13 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Actinoi",
@@ -556,7 +556,7 @@
 </svg></span></p>
 <p>NOIP 2012 普及组 第一题</p>
 <h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1>
-<p>​	读入一个数字 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 600.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-6-Title">
+<p>​​​ ​读入一个数字 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 600.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-6-Title">
 <title id="MathJax-SVG-6-Title">n</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E6-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/>
@@ -665,23 +665,6 @@
  <use xlink:href="#E15-MJMATHI-69" x="2323" y="0"/>
 </g>
 </svg></span> 就可以了。</p>
-
-async highlight(#include &lt;cmath&gt;
-#include &lt;cstdio&gt;
-using namespace std;
-int main() {
-    long long n;
-    scanf("%lld", &amp;n);
-    int l = sqrt(n) + 1;
-    for (long long i = 2; i &lt;= l; i++)
-        if (n % i == 0) {
-            printf("%lld\n", n / i);
-            return 0;
-        }
-    return 0;
-}, c++, cache, options])
-
-
 <pre><code>#include &lt;cmath&gt;
 #include &lt;cstdio&gt;
 using namespace std;
@@ -1132,8 +1115,8 @@ int main() {
 </svg></span>。</p>
 <p>NOIP 2012 普及组 第二题</p>
 <h1 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h1>
-<p>​	本题就是一道模拟题，但是题目条件比较多，比较考察读题能力。</p>
-<p>​	由于指示牌上的数字可能会很大，需要围着本层楼跑好几圈才能够跑到能像上一层的房间，所以，我们设置一个 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.738ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2470.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-48-Title">
+<p>​​​ ​本题就是一道模拟题，但是题目条件比较多，比较考察读题能力。</p>
+<p>​​​ ​由于指示牌上的数字可能会很大，需要围着本层楼跑好几圈才能够跑到能像上一层的房间，所以，我们设置一个 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.738ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2470.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-48-Title">
 <title id="MathJax-SVG-48-Title">Floor</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E48-MJMATHI-46" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
@@ -1475,7 +1458,7 @@ int main() {
 </svg></span>。</p>
 <p>NOIP 2012 普及组 第三题</p>
 <h1 id="题解：-2"><a href="#题解：-2" class="headerlink" title="题解："></a>题解：</h1>
-<p>​	本题是一个动态规划问题，但是，本题却不需要 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.238ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1824.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-65-Title">
+<p>​​​ ​本题是一个动态规划问题，但是，本题却不需要 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.238ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1824.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-65-Title">
 <title id="MathJax-SVG-65-Title">min</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E65-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
@@ -1500,7 +1483,7 @@ int main() {
  <use xlink:href="#E66-MJMATHI-78" x="1408" y="0"/>
 </g>
 </svg></span> 函数，而是只需要简单地从上一个状态转移到当前状态。</p>
-<p>​	我们设置一个 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-67-Title">
+<p>​​​ ​我们设置一个 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-67-Title">
 <title id="MathJax-SVG-67-Title">DP</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E67-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"/>
@@ -1535,7 +1518,7 @@ int main() {
  <use xlink:href="#E69-MJMATHI-6A" x="0" y="0"/>
 </g>
 </svg></span> 盆花时有多少种不同的摆花方案。</p>
-<p>​	然后，我们用 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 345.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-70-Title">
+<p>​​​ ​然后，我们用 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 345.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-70-Title">
 <title id="MathJax-SVG-70-Title">i</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E70-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"/>
@@ -2208,8 +2191,8 @@ int main() {
 </svg></span></p>
 <p>NOIP 2012 普及组 第四题</p>
 <h1 id="题解：-3"><a href="#题解：-3" class="headerlink" title="题解："></a>题解：</h1>
-<p>​	Emmm......由于本题被证明没有靠谱的多项式复杂度的做法，所以没有正解。那么。。。<s>就怎么玄学怎么来呗！</s></p>
-<p>​	我采用了 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.742ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 3333.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-124-Title">
+<p>​​​ ​Emmm......由于本题被证明没有靠谱的多项式复杂度的做法，所以没有正解。那么。。。<s>就怎么玄学怎么来呗！</s></p>
+<p>​​​ ​我采用了 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.742ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 3333.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-124-Title">
 <title id="MathJax-SVG-124-Title">Floyd()</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E124-MJMATHI-46" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
@@ -2360,7 +2343,7 @@ int main() {
  <use xlink:href="#E136-MJMATHI-75" x="3098" y="0"/>
 </g>
 </svg></span> 的道路。至此，初始化完毕。</p>
-<p>​	<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.742ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 3333.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-137-Title">
+<p>​​​ ​<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.742ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 3333.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-137-Title">
 <title id="MathJax-SVG-137-Title">Floyd ()</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E137-MJMATHI-46" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
